@@ -20,3 +20,6 @@ body{font-family:'Source Sans Pro',sans-serif;font-size:15px;line-height:24px}
 .header-image__title{font-size:86px;position:absolute;left:150px;top:270px}
 .header-image__title span{margin-top:60px;display:block;font-size:46px}
 .header-image>.page__btn{position:absolute;left:150px;top:450px}
+.block-styles-text{text-align:center}
+.block-styles-text__title{font-size:46px}
+.block-styles-text__desc{margin-top:15px;font-size:18px}

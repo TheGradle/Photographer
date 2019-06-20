@@ -119,3 +119,16 @@ body {
     }
   }
 }
+
+.block-styles {
+  &-text {
+    text-align: center;
+    &__title {
+      font-size: 46px;
+    }
+    &__desc {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+}

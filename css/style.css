@@ -91,3 +91,11 @@ body {
     position: absolute;
     left: 150px;
     top: 450px; }
+
+.block-styles-text {
+  text-align: center; }
+  .block-styles-text__title {
+    font-size: 46px; }
+  .block-styles-text__desc {
+    margin-top: 15px;
+    font-size: 18px; }
