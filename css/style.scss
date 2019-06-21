@@ -21,6 +21,7 @@ body {
 
 .page {
   padding: 100px 0;
+  background: $gray-color;
   &__btn {
     border: none;
     background: $orange-color;
@@ -129,6 +130,37 @@ body {
     &__desc {
       margin-top: 15px;
       font-size: 18px;
+    }
+  }
+  &-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+      width: 369px;
+      height: 224px;
+      position: relative;
+      margin-top: 75px;
+      &__img {
+        position: absolute;
+        width: 369px;
+        height: 224px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+      &__title {
+        position: absolute;
+        bottom: -60px;
+        background: $light-color;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 32px;
+        font-family: 'Open Sans Condensed', sans-serif;
+      }
     }
   }
 }

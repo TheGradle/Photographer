@@ -13,7 +13,8 @@ body {
   background: #fff; }
 
 .page {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background: #f5f5f5; }
   .page__btn {
     border: none;
     background: #f6844a;
@@ -99,3 +100,30 @@ body {
   .block-styles-text__desc {
     margin-top: 15px;
     font-size: 18px; }
+.block-styles-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .block-styles-images-item {
+    width: 369px;
+    height: 224px;
+    position: relative;
+    margin-top: 75px; }
+    .block-styles-images-item__img {
+      position: absolute;
+      width: 369px;
+      height: 224px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover; }
+    .block-styles-images-item__title {
+      position: absolute;
+      bottom: -60px;
+      background: #fff;
+      height: 60px;
+      width: 100%;
+      text-align: center;
+      line-height: 60px;
+      font-size: 32px;
+      font-family: 'Open Sans Condensed', sans-serif; }
