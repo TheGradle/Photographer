@@ -22,12 +22,29 @@ body {
 .page {
   padding: 100px 0;
   background: $gray-color;
+  &_telegram {
+    padding: 150px 0;
+    background: url(../img/bg_telegram.jpg);
+  }
+  &_white {
+    background: $light-color;
+  }
+  &__title {
+    font-size: 46px;
+    text-align: center;
+  }
+  &__desc {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+  }
   &__btn {
     border: none;
+    text-decoration: none;
     background: $orange-color;
     color: $light-color;
     text-transform: uppercase;
-    padding: 15px 55px;
+    padding: 13px 55px;
     letter-spacing: 1px;
     transition: 0.3s;
     border-radius: 3px;
@@ -83,6 +100,9 @@ body {
         &:first-child {
           margin-left: 0;
         }
+        &:first-child {
+          border-top: 2px solid $orange-color;
+        }
         a {
           text-decoration: none;
           color: #000;
@@ -122,16 +142,6 @@ body {
 }
 
 .block-styles {
-  &-text {
-    text-align: center;
-    &__title {
-      font-size: 46px;
-    }
-    &__desc {
-      margin-top: 15px;
-      font-size: 18px;
-    }
-  }
   &-images {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +171,48 @@ body {
         font-size: 32px;
         font-family: 'Open Sans Condensed', sans-serif;
       }
+    }
+  }
+}
+
+.block-sub {
+  text-align: center;
+  &__title {
+    font-size: 46px;
+  }
+  &__desc {
+    margin-top: 15px;
+    font-size: 19px;
+  }
+  &__link {
+    display: block;
+    margin-top: 35px;
+    font-size: 46px;
+  }
+}
+
+.block-reviews {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  &-person {
+    margin-top: 75px;
+    &__img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    &__text {
+      margin-top: 15px;
+      max-width: 500px;
+      &:before {
+        content: url(../img/quote.svg);
+        display: block;
+      }
+    }
+    &__name {
+      margin-top: 25px;
+      font-size: 19px;
+      font-weight: 700;
     }
   }
 }

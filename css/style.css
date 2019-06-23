@@ -15,12 +15,25 @@ body {
 .page {
   padding: 100px 0;
   background: #f5f5f5; }
+  .page_telegram {
+    padding: 150px 0;
+    background: url(../img/bg_telegram.jpg); }
+  .page_white {
+    background: #fff; }
+  .page__title {
+    font-size: 46px;
+    text-align: center; }
+  .page__desc {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px; }
   .page__btn {
     border: none;
+    text-decoration: none;
     background: #f6844a;
     color: #fff;
     text-transform: uppercase;
-    padding: 15px 55px;
+    padding: 13px 55px;
     letter-spacing: 1px;
     transition: 0.3s;
     border-radius: 3px;
@@ -65,6 +78,8 @@ body {
       margin-left: 70px; }
       .header-nav-list__item:first-child {
         margin-left: 0; }
+      .header-nav-list__item:first-child {
+        border-top: 2px solid #f6844a; }
       .header-nav-list__item a {
         text-decoration: none;
         color: #000;
@@ -93,13 +108,6 @@ body {
     left: 150px;
     top: 450px; }
 
-.block-styles-text {
-  text-align: center; }
-  .block-styles-text__title {
-    font-size: 46px; }
-  .block-styles-text__desc {
-    margin-top: 15px;
-    font-size: 18px; }
 .block-styles-images {
   display: flex;
   flex-wrap: wrap;
@@ -127,3 +135,35 @@ body {
       line-height: 60px;
       font-size: 32px;
       font-family: 'Open Sans Condensed', sans-serif; }
+
+.block-sub {
+  text-align: center; }
+  .block-sub__title {
+    font-size: 46px; }
+  .block-sub__desc {
+    margin-top: 15px;
+    font-size: 19px; }
+  .block-sub__link {
+    display: block;
+    margin-top: 35px;
+    font-size: 46px; }
+
+.block-reviews {
+  text-align: center;
+  display: flex;
+  justify-content: space-between; }
+  .block-reviews-person {
+    margin-top: 75px; }
+    .block-reviews-person__img {
+      width: 100px;
+      border-radius: 50%; }
+    .block-reviews-person__text {
+      margin-top: 15px;
+      max-width: 500px; }
+      .block-reviews-person__text:before {
+        content: url(../img/quote.svg);
+        display: block; }
+    .block-reviews-person__name {
+      margin-top: 25px;
+      font-size: 19px;
+      font-weight: 700; }

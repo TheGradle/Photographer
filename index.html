@@ -60,13 +60,13 @@
       </div>
       <div class="header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-list__item"><a href="">Главная</a></li>
-          <li class="header-nav-list__item"><a href="">Мои стили</a></li>
-          <li class="header-nav-list__item"><a href="">Подписка</a></li>
-          <li class="header-nav-list__item"><a href="">Отзывы</a></li>
-          <li class="header-nav-list__item"><a href="">Цены</a></li>
-          <li class="header-nav-list__item"><a href="">Проекты</a></li>
-          <li class="header-nav-list__item"><a href="">Связь</a></li>
+          <li class="header-nav-list__item"><a href="#">Главная</a></li>
+          <li class="header-nav-list__item"><a href="#block-styles">Мои стили</a></li>
+          <li class="header-nav-list__item"><a href="#block-sub">Подписка</a></li>
+          <li class="header-nav-list__item"><a href="#block-reviews">Отзывы</a></li>
+          <li class="header-nav-list__item"><a href="#block-price">Цены</a></li>
+          <li class="header-nav-list__item"><a href="#block-projects">Проекты</a></li>
+          <li class="header-nav-list__item"><a href="#block-form">Связь</a></li>
         </ul>
       </div>
       <div class="header-image">
@@ -74,17 +74,15 @@
           Добро пожаловать
           <span>В мастерскую фотографий</span>
         </h3>
-        <button class="page__btn">Больше</button>
+        <a href="#block-styles" class="page__btn">Больше</a>
       </div>
     </div>
   </div>
-  <div class="page">
+  <div class="page" id="block-styles">
     <div class="wrap">
+      <h3 class="page__title">Захватывая ваши лучшие моменты</h3>
+      <p class="page__desc">На днях планируете что-то великое? Тогда вам стоит запечатлить это на страницы истории.</p>
       <div class="block-styles">
-        <div class="block-styles-text">
-          <h3 class="block-styles-text__title">Захватывая ваши лучшие моменты</h3>
-          <p class="block-styles-text__desc">На днях планируете что-то великое? Тогда вам стоит запечатлить это на страницы истории.</p>
-        </div>
         <div class="block-styles-images">
           <div class="block-styles-images-item">
             <img src="img/blog1.jpg" alt="" class="block-styles-images-item__img">
@@ -114,32 +112,31 @@
       </div>
     </div>
   </div>
-  <div class="page page_orange">
+  <div class="page page_telegram" id="block-sub">
     <div class="wrap">
-      <div class="block-sub">
-        <h3 class="block-sub__title"></h3>
-        <p class="block-sub__desc"></p>
-        <form action=""><input type="text"><button></button></form>
-      </div>
+      <h3 class="page__title">Будьте вкурсе всех событий</h3>
+      <p class="page__desc">Подпишитесь на канал в Телеграм. О каждой новой фотографии вы узнаете первым.</p>
+      <div class="block-sub"><a class="block-sub__link" href="">t.me/photographer</a></div>
     </div>
   </div>
-  <div class="page page_white">
+  <div class="page page_white" id="block-reviews">
     <div class="wrap">
+      <h3 class="page__title">Отзывы</h3>
       <div class="block-reviews">
         <div class="block-reviews-person">
-          <img src="" alt="" class="block-reviews-person__img">
-          <p class="block-reviews-person__text"></p>
-          <h4 class="block-reviews-person__name"></h4>
+          <img src="img/avatar.jpg" alt="" class="block-reviews-person__img">
+          <p class="block-reviews-person__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facilis nostrum, ut iusto? Eligendi, ipsa magnam. Delectus, quo, ex. Fugiat incidunt voluptatem repudiandae iure in!</p>
+          <h4 class="block-reviews-person__name">Валерий Альбертович</h4>
         </div>
         <div class="block-reviews-person">
-          <img src="" alt="" class="block-reviews-person__img">
-          <p class="block-reviews-person__text"></p>
-          <h4 class="block-reviews-person__name"></h4>
+          <img src="img/avatar.jpg" alt="" class="block-reviews-person__img">
+          <p class="block-reviews-person__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facilis nostrum, ut iusto? Eligendi, ipsa magnam. Delectus, quo, ex. Fugiat incidunt voluptatem repudiandae iure in!</p>
+          <h4 class="block-reviews-person__name">Дмитрий Карпов</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="page">
+  <div class="page" id="block-price">
     <div class="wrap">
       <div class="block-price">
         <div class="block-price-type">
@@ -166,7 +163,7 @@
       </div>
     </div>
   </div>
-  <div class="page page_white">
+  <div class="page page_white" id="block-projects">
     <div class="wrap">
       <div class="block-projects">
         <div class="block-projects-item">
@@ -187,7 +184,7 @@
       </div>
     </div>
   </div>
-  <div class="page">
+  <div class="page" id="block-form">
     <div class="wrap">
       <div class="block-form">
         <h2 class="block-form__title">
@@ -207,6 +204,7 @@
       
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
