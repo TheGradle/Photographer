@@ -37,6 +37,7 @@ body {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
+    padding-bottom: 40px;
   }
   &__btn {
     border: none;
@@ -147,22 +148,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     &-item {
-      width: 369px;
-      height: 224px;
-      position: relative;
-      margin-top: 75px;
-      &__img {
-        position: absolute;
+      &-img {
         width: 369px;
         height: 224px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
+        position: relative;
+        margin-top: 35px;
+        img {
+          position: absolute;
+          width: 369px;
+          height: 224px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
       }
       &__title {
-        position: absolute;
-        bottom: -60px;
         background: $light-color;
         height: 60px;
         width: 100%;
@@ -180,7 +181,6 @@ body {
   &__link {
     display: block;
     text-decoration: none;
-    margin-top: 35px;
     font-size: 46px;
     color: #439ed5;
     &:hover {

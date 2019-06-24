@@ -26,7 +26,8 @@ body {
   .page__desc {
     margin-top: 15px;
     text-align: center;
-    font-size: 18px; }
+    font-size: 18px;
+    padding-bottom: 40px; }
   .page__btn {
     border: none;
     text-decoration: none;
@@ -112,12 +113,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .block-styles-images-item {
+  .block-styles-images-item-img {
     width: 369px;
     height: 224px;
     position: relative;
-    margin-top: 75px; }
-    .block-styles-images-item__img {
+    margin-top: 35px; }
+    .block-styles-images-item-img img {
       position: absolute;
       width: 369px;
       height: 224px;
@@ -125,23 +126,20 @@ body {
       top: 50%;
       transform: translate(-50%, -50%);
       object-fit: cover; }
-    .block-styles-images-item__title {
-      position: absolute;
-      bottom: -60px;
-      background: #fff;
-      height: 60px;
-      width: 100%;
-      text-align: center;
-      line-height: 60px;
-      font-size: 32px;
-      font-family: 'Open Sans Condensed', sans-serif; }
+  .block-styles-images-item__title {
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    font-family: 'Open Sans Condensed', sans-serif; }
 
 .block-channel {
   text-align: center; }
   .block-channel__link {
     display: block;
     text-decoration: none;
-    margin-top: 35px;
     font-size: 46px;
     color: #439ed5; }
     .block-channel__link:hover {
