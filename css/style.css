@@ -136,17 +136,16 @@ body {
       font-size: 32px;
       font-family: 'Open Sans Condensed', sans-serif; }
 
-.block-sub {
+.block-channel {
   text-align: center; }
-  .block-sub__title {
-    font-size: 46px; }
-  .block-sub__desc {
-    margin-top: 15px;
-    font-size: 19px; }
-  .block-sub__link {
+  .block-channel__link {
     display: block;
+    text-decoration: none;
     margin-top: 35px;
-    font-size: 46px; }
+    font-size: 46px;
+    color: #439ed5; }
+    .block-channel__link:hover {
+      text-decoration: underline; }
 
 .block-reviews {
   text-align: center;

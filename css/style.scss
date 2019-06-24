@@ -175,19 +175,17 @@ body {
   }
 }
 
-.block-sub {
+.block-channel {
   text-align: center;
-  &__title {
-    font-size: 46px;
-  }
-  &__desc {
-    margin-top: 15px;
-    font-size: 19px;
-  }
   &__link {
     display: block;
+    text-decoration: none;
     margin-top: 35px;
     font-size: 46px;
+    color: #439ed5;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

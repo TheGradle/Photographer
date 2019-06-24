@@ -29,10 +29,9 @@ body{font-family:'Source Sans Pro',sans-serif;font-size:15px;line-height:24px}
 .block-styles-images-item{width:369px;height:224px;position:relative;margin-top:75px}
 .block-styles-images-item__img{position:absolute;width:369px;height:224px;left:50%;top:50%;transform:translate(-50%,-50%);object-fit:cover}
 .block-styles-images-item__title{position:absolute;bottom:-60px;background:#fff;height:60px;width:100%;text-align:center;line-height:60px;font-size:32px;font-family:'Open Sans Condensed',sans-serif}
-.block-sub{text-align:center}
-.block-sub__title{font-size:46px}
-.block-sub__desc{margin-top:15px;font-size:19px}
-.block-sub__link{display:block;margin-top:35px;font-size:46px}
+.block-channel{text-align:center}
+.block-channel__link{display:block;text-decoration:none;margin-top:35px;font-size:46px;color:#439ed5}
+.block-channel__link:hover{text-decoration:underline}
 .block-reviews{text-align:center;display:flex;justify-content:space-between}
 .block-reviews-person{margin-top:75px}
 .block-reviews-person__img{width:100px;border-radius:50%}
