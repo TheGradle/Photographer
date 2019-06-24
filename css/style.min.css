@@ -42,5 +42,5 @@ body{font-family:'Source Sans Pro',sans-serif;font-size:15px;line-height:24px}
 .block-projects-item{flex-basis:33%}
 .block-projects-item-img{width:369px;height:224px;position:relative;margin-top:75px}
 .block-projects-item-img img{position:absolute;width:369px;height:224px;left:50%;top:50%;transform:translate(-50%,-50%);object-fit:cover}
-.block-projects-item__title{text-align:center;font-size:32px;font-family:'Open Sans Condensed',sans-serif;margin-top:15px}
-.block-projects-item__desc{text-align:center;margin-top:10px;padding:0 10px}
+.block-projects-item__title{text-align:center;font-size:32px;font-family:'Open Sans Condensed',sans-serif;margin-top:25px}
+.block-projects-item__desc{text-align:center;margin-top:15px;padding:0 10px}
