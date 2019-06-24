@@ -1,4 +1,5 @@
 body{font-family:'Source Sans Pro',sans-serif;font-size:15px;line-height:24px}
+#toTop{cursor:pointer;color:#fff;background:#f6844a;width:60px;height:60px;text-align:center;line-height:70px;font-size:30px;border-radius:50%;position:fixed;right:25px;bottom:25px;z-index:11;display:none;font-family:Arial,sans-serif}
 .wrap{max-width:1170px;margin:0 auto;padding-left:15px;padding-right:15px}
 .page-main{background:#fff}
 .page{padding:100px 0;background:#f5f5f5}
