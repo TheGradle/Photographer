@@ -214,3 +214,42 @@ body {
     }
   }
 }
+
+.block-price {
+
+}
+
+.block-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &-item {
+    flex-basis: 33%;
+    &-img {
+      width: 369px;
+      height: 224px;
+      position: relative;
+      margin-top: 75px;
+      img {
+        position: absolute;
+        width: 369px;
+        height: 224px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+    }
+    &__title {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      margin-top: 15px;
+    }
+    &__desc {
+      text-align: center;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+  }
+}
