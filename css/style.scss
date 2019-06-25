@@ -40,6 +40,9 @@ body {
 .page {
   padding: 100px 0;
   background: $gray-color;
+  @media (max-width: 420px) {
+    padding: 70px 0;
+  }
   &_telegram {
     padding: 150px 0;
     background: url(../img/bg_telegram.jpg);
@@ -50,12 +53,19 @@ body {
   &__title {
     font-size: 46px;
     text-align: center;
+    line-height: 40px;
+    @media (max-width: 700px) {
+      font-size: 36px;
+    }
   }
   &__desc {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
     padding-bottom: 40px;
+    @media (max-width: 700px) {
+      font-size: 17px;
+    }
   }
   &__btn {
     border: none;
@@ -116,6 +126,9 @@ body {
       line-height: 85px;
       &__item {
         margin-left: 70px;
+        @media (max-width: 950px) {
+          margin-left: 40px;
+        }
         &:first-child {
           margin-left: 0;
         }
@@ -141,21 +154,33 @@ body {
     background: #8388c2;
     position: relative;
     color: $light-color;
+    @media (max-width: 950px) {
+      text-align: center;
+    }
     &__title {
       font-size: 86px;
       position: absolute;
       left: 150px;
       top: 270px;
+      @media (max-width: 1200px) {
+        font-size: 74px;
+      }
       span {
         margin-top: 60px;
         display: block;
         font-size: 46px;
+        @media (max-width: 1200px) {
+          font-size: 34px;
+        }
       }
     }
     & > .page__btn {
       position: absolute;
       left: 150px;
       top: 450px;
+      @media (max-width: 950px) {
+        left: calc(50% - 100.45px);
+      }
     }
   }
 }
@@ -165,12 +190,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+      justify-content: space-around;
+    }
     &-item {
       &-img {
         width: 369px;
         height: 224px;
         position: relative;
         margin-top: 35px;
+        @media (max-width: 390px) {
+          padding: 0 15px;
+        }
         img {
           position: absolute;
           width: 369px;
@@ -201,6 +232,9 @@ body {
     text-decoration: none;
     font-size: 46px;
     color: #439ed5;
+    @media (max-width: 420px) {
+      font-size: 36px;
+    }
     &:hover {
       text-decoration: underline;
     }
@@ -211,8 +245,14 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 910px) {
+    flex-direction: column;
+  }
   &-person {
     margin-top: 75px;
+    @media (max-width: 910px) {
+      margin: 75px auto 0;
+    }
     &__img {
       width: 100px;
       border-radius: 50%;
@@ -234,13 +274,73 @@ body {
 }
 
 .block-price {
-
+  margin-top: 135px;
+  &__value {
+    text-align: center;
+    font-size: 200px;
+    color: $orange-color;
+    @media (max-width: 500px) {
+      font-size: 170px;
+    }
+    @media (max-width: 350px) {
+      font-size: 145px;
+    }
+    span {
+      font-size: 36px;
+      @media (max-width: 500px) {
+        font-size: 20px;
+        margin-left: -35px;
+      }
+    }
+  }
+  &__note {
+    text-align: center;
+    margin-top: 80px;
+    @media (max-width: 500px) {
+      margin-top: 13px;
+    }
+  }
+  &-other {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+    &-item {
+      &__value {
+        text-align: center;
+        font-size: 112px;
+        color: $orange-color;
+        @media (max-width: 350px) {
+          font-size: 100px;
+        }
+        span {
+          font-size: 26px;
+          @media (max-width: 500px) {
+            font-size: 20px;
+            margin-left: -25px;
+          }
+        }
+        margin-bottom: 20px;
+        @media (max-width: 700px) {
+          margin-top: 50px;
+        }
+      }
+      &__note {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .block-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    justify-content: space-around;
+  }
   &-item {
     flex-basis: 33%;
     &-img {
@@ -320,6 +420,9 @@ body {
       margin-bottom: 30px;
       &_text {
         font-size: 16px;
+        @media (max-width: 390px) {
+          font-size: 12px;
+        }
       }
     }
     & > .page__btn {
@@ -332,25 +435,40 @@ body {
 footer {
   background: #000;
   height: 250px;
+  @media (max-width: 910px) {
+    height: 668px;
+  }
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   color: $light-color;
+  @media (max-width: 910px) {
+    flex-direction: column;
+  }
   &__copy {
     text-align: center;
     background: $orange-color;
     color: $light-color;
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
   }
   &-item {
     &_center {
       margin: auto 0;
     }
     flex-basis: 33%;
+    @media (max-width: 910px) {
+      flex-basis: 100%;
+    }
     &-logo {
       display: flex;
       line-height: 250px;
+      @media (max-width: 910px) {
+        justify-content: center;
+      }
       &__title {
         text-transform: uppercase;
         font-family: 'Open Sans Condensed', sans-serif;
@@ -359,6 +477,7 @@ footer {
       }
     }
     &-links {
+      text-align: center;
       &__item {
         a {
           color: $light-color;
@@ -371,9 +490,15 @@ footer {
     }
     &-social {
       display: flex;
+      justify-content: center;
       &__item {
         margin-left: 20px;
         line-height: 250px;
+        @media (max-width: 910px) {
+          &:first-child {
+            margin-left: 0;
+          }
+        }
         a {
           i {
             color: $light-color;
