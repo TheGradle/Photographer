@@ -16,7 +16,7 @@
   <meta name="google" content="nositelinkssearchbox">
   <meta name="google" content="notranslate">
   <meta name="google-site-verification" content="verification_token">
-  <meta name="generator" content="program"><!-- Короткое описание тематики вашего сайта -->
+  <meta name="generator" content="program">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
@@ -33,14 +33,10 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#4285f4">
-  <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#4285f4">
-  <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Яндекс.Браузер -->
  <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
  <script src="https://kit.fontawesome.com/bacba5a713.js"></script>
 </head>
@@ -66,7 +62,7 @@
           <li class="header-nav-list__item"><a href="#block-reviews">Отзывы</a></li>
           <li class="header-nav-list__item"><a href="#block-price">Цены</a></li>
           <li class="header-nav-list__item"><a href="#block-projects">Проекты</a></li>
-          <li class="header-nav-list__item"><a href="#block-form">Связь</a></li>
+          <li class="header-nav-list__item"><a href="#block-feedback">Связь</a></li>
         </ul>
       </div>
       <div class="header-image">
@@ -186,18 +182,17 @@
       </div>
     </div>
   </div>
-  <div class="page" id="block-form">
+  <div class="page" id="block-feedback">
     <div class="wrap">
       <h3 class="page__title">Обратная связь</h3>
-      <div class="block-form">
-        <h2 class="block-form__title">
-          <span></span>
-        </h2>
-        <form action="">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <button class="page__btn"></button>
+      <div class="block-feedback">
+        <form class="block-feedback-form" action="">
+          <input type="text" class="block-feedback-form__input" placeholder="Имя Фамилия" name="">
+          <input type="text" class="block-feedback-form__input" placeholder="Email" name="">
+          <textarea class="block-feedback-form__mess" placeholder="Текст сообщения" name=""></textarea>
+          <input type="checkbox" name="agreement" id="agreement" class="block-feedback-form__agreement">
+          <label for="agreement" class="block-feedback-form__agreement_text">Я соглашаюсь, что ввожу данные добровольно</label>
+          <button class="page__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -219,7 +214,7 @@
             <li class="footer-item-links__item"><a href="#block-reviews">Отзывы</a></li>
             <li class="footer-item-links__item"><a href="#block-price">Цены</a></li>
             <li class="footer-item-links__item"><a href="#block-projects">Проекты</a></li>
-            <li class="footer-item-links__item"><a href="#block-form">Связь</a></li>
+            <li class="footer-item-links__item"><a href="#block-feedback">Связь</a></li>
           </ul>
         </div>
         <div class="footer-item">
