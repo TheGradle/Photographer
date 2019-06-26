@@ -1,9 +1,9 @@
 $light-color: #fff;
 $gray-color: #f5f5f5;
 $orange-color: #f6844a;
+$green-color: #1d4a47;
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   line-height: 24px;
   overflow-x: hidden;
@@ -16,20 +16,17 @@ body {
   width: 60px;
   height: 60px;
   text-align: center;
-  line-height: 70px;
-  font-size: 30px;
+  line-height: 60px;
   border-radius: 50%;
   position: fixed;
   right: 25px;
   bottom: 35px;
   z-index: 11;
   display: none;
-  font-family: Arial, sans-serif;
   @media (max-width: 390px) {
     width: 50px;
     height: 50px;
-    line-height: 60px;
-    font-size: 25px;
+    line-height: 50px;
     right: 20px;
     bottom: 25px;
   }
@@ -120,31 +117,36 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    background: #000;
+    color: $light-color;
     @media (max-width: 760px) {
       font-size: 45px;
       height: 140px;
     }
-    @media (max-width: 420px) {
-      font-size: 36px;
+    @media (max-width: 550px) {
+      font-size: 33px;
       height: 140px;
     }
-    @media (max-width: 355px) {
+    @media (max-width: 425px) {
       flex-direction: column;
       svg {
-        margin: -15px auto 0;
+        margin: 0 auto;
       }
     }
     &__title {
       text-transform: uppercase;
-      font-family: 'Open Sans Condensed', sans-serif;
       line-height: 166px;
       margin-left: 25px;
       @media (max-width: 760px) {
         line-height: 140px;
       }
-      @media (max-width: 355px) {
-        margin-top: 15px;
-        line-height: 20px;
+      @media (max-width: 425px) {
+        margin-left: 0;
+        line-height: 56px;
+      }
+      @media (max-width: 360px) {
+        margin-top: 8px;
+        line-height: 32px;
         margin-left: 0;
       }
     }
@@ -152,7 +154,7 @@ body {
   &-nav {
     width: 100%;
     height: 85px;
-    box-shadow: 0px -6px 10px 0px rgba(50, 50, 50, 0.19);
+    box-shadow: 0px -6px 10px 0px rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid #e7e7e7;
     @media (max-width: 760px) {
       height: auto;
@@ -289,7 +291,6 @@ body {
         text-align: center;
         line-height: 60px;
         font-size: 32px;
-        font-family: 'Open Sans Condensed', sans-serif;
       }
     }
   }
@@ -404,44 +405,6 @@ body {
   }
 }
 
-.block-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media (max-width: 1200px) {
-    justify-content: space-around;
-  }
-  &-item {
-    flex-basis: 33%;
-    &-img {
-      width: 369px;
-      height: 224px;
-      position: relative;
-      margin-top: 75px;
-      img {
-        position: absolute;
-        width: 369px;
-        height: 224px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-      }
-    }
-    &__title {
-      text-align: center;
-      font-size: 32px;
-      font-family: 'Open Sans Condensed', sans-serif;
-      margin-top: 25px;
-    }
-    &__desc {
-      text-align: center;
-      margin-top: 15px;
-      padding: 0 10px;
-    }
-  }
-}
-
 .block-feedback {
   &-form {
     margin-top: 75px;
@@ -452,7 +415,6 @@ body {
       height: 50px;
       border: none;
       margin-bottom: 20px;
-      background: $gray-color;
       border-top: 1px solid #000;
       border-bottom: 1px solid #000;
       outline: none;
@@ -471,13 +433,11 @@ body {
       height: 150px;
       border: none;
       margin-bottom: 20px;
-      background: $gray-color;
       border-top: 1px solid #000;
       border-bottom: 1px solid #000;
       outline: none;
       padding: 15px 0;
       font-size: 18px;
-      font-family: 'Source Sans Pro', sans-serif;
       resize: none;
       &::-webkit-input-placeholder {
         color: #000;
@@ -498,6 +458,7 @@ body {
     & > .page__btn {
       display: block;
       margin: 0 auto;
+      background: $green-color;
     }
   }
 }
@@ -539,11 +500,31 @@ footer {
       @media (max-width: 910px) {
         justify-content: center;
       }
+      @media (max-width: 435px) {
+        svg {
+          width: 35px;
+        }
+      }
+      @media (max-width: 385px) {
+        line-height: 120px;
+        flex-direction: column;
+        svg {
+          margin: 0 auto;
+          position: relative;
+          top: 40px;
+        }
+      }
       &__title {
         text-transform: uppercase;
-        font-family: 'Open Sans Condensed', sans-serif;
         margin-left: 15px;
-        font-size: 30px;
+        font-size: 29px;
+        @media (max-width: 435px) {
+          font-size: 25px;
+        }
+        @media (max-width: 385px) {
+          margin-left: 0;
+          text-align: center;
+        }
       }
     }
     &-links {
