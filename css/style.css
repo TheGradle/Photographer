@@ -115,8 +115,11 @@ body {
   .header-logo__title {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
-    line-height: 140px;
+    line-height: 166px;
     margin-left: 25px; }
+    @media (max-width: 760px) {
+      .header-logo__title {
+        line-height: 140px; } }
     @media (max-width: 355px) {
       .header-logo__title {
         margin-top: 15px;
@@ -194,7 +197,7 @@ body {
       .header-image__title {
         font-size: 54px; } }
     .header-image__title span {
-      margin-top: 20px;
+      margin-top: 40px;
       display: block;
       font-size: 46px;
       line-height: 25px; }
@@ -213,7 +216,7 @@ body {
     top: 450px; }
     @media (max-width: 950px) {
       .header-image > .page__btn {
-        left: calc(50% - 100.45px);
+        left: calc(50% - 86.45px);
         margin-top: 30px; } }
 
 .block-styles-images {

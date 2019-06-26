@@ -137,8 +137,11 @@ body {
     &__title {
       text-transform: uppercase;
       font-family: 'Open Sans Condensed', sans-serif;
-      line-height: 140px;
+      line-height: 166px;
       margin-left: 25px;
+      @media (max-width: 760px) {
+        line-height: 140px;
+      }
       @media (max-width: 355px) {
         margin-top: 15px;
         line-height: 20px;
@@ -225,7 +228,7 @@ body {
         font-size: 54px;
       }   
       span {
-        margin-top: 20px;
+        margin-top: 40px;
         display: block;
         font-size: 46px;
         line-height: 25px;
@@ -245,7 +248,7 @@ body {
       left: 150px;
       top: 450px;
       @media (max-width: 950px) {
-        left: calc(50% - 100.45px);
+        left: calc(50% - 86.45px);
         margin-top: 30px;
       }
     }
