@@ -1,22 +1,22 @@
 $light-color: #fff;
 $gray-color: #f5f5f5;
-$orange-color: #f6844a;
 $green-color: #1d4a47;
 
 body {
   font-size: 15px;
   line-height: 24px;
   overflow-x: hidden;
+  font-family: 'Alice', serif;
 }
 
 #toTop {
   cursor: pointer;
   color: $light-color;
-  background: $orange-color;
+  background: $green-color;
   width: 60px;
   height: 60px;
   text-align: center;
-  line-height: 60px;
+  line-height: 70px;
   border-radius: 50%;
   position: fixed;
   right: 25px;
@@ -26,10 +26,14 @@ body {
   @media (max-width: 390px) {
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    line-height: 60px;
     right: 20px;
     bottom: 25px;
   }
+}
+
+.screen-styles {
+  
 }
 
 .wrap {
@@ -49,12 +53,16 @@ body {
   @media (max-width: 420px) {
     padding: 70px 0;
   }
-  &_telegram {
+  &_green {
     padding: 150px 0;
-    background: url(../img/bg_telegram.jpg);
+    background: $green-color;
   }
   &_white {
     background: $light-color;
+  }
+  &_black {
+    background: #000;
+    color: $light-color;
   }
   &__title {
     font-size: 46px;
@@ -76,7 +84,7 @@ body {
   &__btn {
     border: none;
     text-decoration: none;
-    background: $orange-color;
+    background: $green-color;
     color: $light-color;
     text-transform: uppercase;
     padding: 13px 55px;
@@ -84,9 +92,7 @@ body {
     transition: 0.3s;
     border-radius: 3px;
     cursor: pointer;
-    &:hover {
-      background: #ff6b20;
-    }
+    outline: none;
   }
 }
 
@@ -119,6 +125,9 @@ body {
     justify-content: center;
     background: #000;
     color: $light-color;
+    svg {
+      margin-bottom: 45px;
+    }
     @media (max-width: 760px) {
       font-size: 45px;
       height: 140px;
@@ -133,18 +142,40 @@ body {
         margin: 0 auto;
       }
     }
+    @media (max-width: 353px) {
+      height: 180px;
+    }
     &__title {
       text-transform: uppercase;
-      line-height: 166px;
+      line-height: 125px;
       margin-left: 25px;
+      span {
+        font-family: 'Old Standard TT', serif;
+        display: block;
+        font-size: 26px;
+        text-transform: lowercase;
+        letter-spacing: 4px;
+        line-height: 0px;
+        text-align: right;
+        margin-top: -17px;
+        @media (max-width: 425px) {
+          margin-top: 0;
+        }
+        @media (max-width: 353px) {
+          padding-top: 20px;
+        }
+      }
       @media (max-width: 760px) {
-        line-height: 140px;
+        line-height: 95px;
       }
       @media (max-width: 425px) {
         margin-left: 0;
         line-height: 56px;
+        span {
+          text-align: center;
+        }
       }
-      @media (max-width: 360px) {
+      @media (max-width: 353px) {
         margin-top: 8px;
         line-height: 32px;
         margin-left: 0;
@@ -163,7 +194,7 @@ body {
     &-list {
       display: flex;
       justify-content: center;
-      line-height: 85px;
+      line-height: 82px;
       @media (max-width: 760px) {
         flex-direction: column; 
       }
@@ -179,7 +210,7 @@ body {
           margin-left: 0;
         }
         &:first-child {
-          border-top: 2px solid $orange-color;
+          border-top: 2px solid $green-color;
           @media (max-width: 760px) {
             border: none;
           }
@@ -190,10 +221,13 @@ body {
           font-size: 19px;
           text-transform: uppercase;
           &:hover {
-            border-top: 2px solid $orange-color;
+            border-top: 2px solid $green-color;
             padding-top: 28px;
+            @-moz-document url-prefix() { 
+              padding-top: 29px;
+            }
             @media (max-width: 760px) {
-              border-bottom: 2px solid $orange-color;
+              border-bottom: 2px solid $green-color;
               padding-bottom: 28px;
             }
           }
@@ -204,11 +238,25 @@ body {
   &-image {
     width: 100%;
     height: 775px;
-    background: #8388c2;
+    background: url(../img/logo.jpg) #000 no-repeat;
+    background-size: 650px;
+    background-position-x: right;
+    background-position-y: center;
     position: relative;
     color: $light-color;
     @media (max-width: 950px) {
       text-align: center;
+      height: 865px;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: 650px;
+    }
+    @media (max-width: 654px) {
+      height: 920px;
+    }
+    @media (max-width: 535px) {
+      background-size: 500px;
+      height: 845px;
     }
     &__title {
       font-size: 86px;
@@ -216,12 +264,17 @@ body {
       left: 150px;
       top: 270px;
       line-height: 60px;
+      width: 50%;
       @media (max-width: 1200px) {
         font-size: 74px;
       }
       @media (max-width: 950px) {
-        padding-top: 250px;
+        padding-top: 625px;
         position: unset;
+        width: 100%;
+      }
+      @media (max-width: 535px) {
+        padding-top: 510px;
       }
       @media (max-width: 420px) {
         font-size: 62px;
@@ -237,7 +290,7 @@ body {
         @media (max-width: 1200px) {
           font-size: 34px;
         }
-        @media (max-width: 420px) {
+        @media (max-width: 426px) {
           font-size: 28px;
         }
         @media (max-width: 350px) {
@@ -248,10 +301,16 @@ body {
     & > .page__btn {
       position: absolute;
       left: 150px;
-      top: 450px;
+      top: 485px;
       @media (max-width: 950px) {
         left: calc(50% - 86.45px);
-        margin-top: 30px;
+        top: 785px;
+      }
+      @media (max-width: 654px) {
+        top: 840px;
+      }
+      @media (max-width: 535px) {
+        top: 740px;
       }
     }
   }
@@ -296,22 +355,6 @@ body {
   }
 }
 
-.block-channel {
-  text-align: center;
-  &__link {
-    display: block;
-    text-decoration: none;
-    font-size: 46px;
-    color: #439ed5;
-    @media (max-width: 420px) {
-      font-size: 36px;
-    }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
 .block-reviews {
   text-align: center;
   display: flex;
@@ -349,7 +392,7 @@ body {
   &__value {
     text-align: center;
     font-size: 200px;
-    color: $orange-color;
+    color: $green-color;
     @media (max-width: 500px) {
       font-size: 170px;
     }
@@ -375,14 +418,14 @@ body {
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       flex-direction: column;
     }
     &-item {
       &__value {
         text-align: center;
         font-size: 112px;
-        color: $orange-color;
+        color: $green-color;
         @media (max-width: 350px) {
           font-size: 100px;
         }
@@ -394,7 +437,7 @@ body {
           }
         }
         margin-bottom: 20px;
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
           margin-top: 50px;
         }
       }
@@ -419,6 +462,7 @@ body {
       border-bottom: 1px solid #000;
       outline: none;
       font-size: 17px;
+      font-family: 'Alice', serif;
       &::-webkit-input-placeholder {
         color: #000;
       } 
@@ -439,6 +483,7 @@ body {
       padding: 15px 0;
       font-size: 18px;
       resize: none;
+      font-family: 'Alice', serif;
       &::-webkit-input-placeholder {
         color: #000;
       } 
@@ -448,6 +493,34 @@ body {
     }
     &__agreement {
       margin-bottom: 30px;
+      display: flex;
+      input {
+        display: none;
+      }
+      span {
+        height: 12px;
+        width: 12px;
+        border: 1px solid $green-color;
+        display: inline-block;
+        position: relative;
+        background-color: $green-color;
+        border-radius: 2px;
+        padding: 3px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      [type=checkbox]:checked + span:before {
+        content: '\2714';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        font-size: 23px;
+        color: $light-color;
+      }
+    }
+    /* 
+    &__agreement {
+      margin-bottom: 30px;
       &_text {
         font-size: 16px;
         @media (max-width: 390px) {
@@ -455,20 +528,17 @@ body {
         }
       }
     }
+    */
     & > .page__btn {
       display: block;
       margin: 0 auto;
-      background: $green-color;
     }
   }
 }
 
 footer {
   background: #000;
-  height: 250px;
-  @media (max-width: 910px) {
-    height: 668px;
-  }
+  height: auto;
 }
 
 .footer {
@@ -480,7 +550,7 @@ footer {
   }
   &__copy {
     text-align: center;
-    background: $orange-color;
+    background: $green-color;
     color: $light-color;
     @media (max-width: 390px) {
       font-size: 12px;
@@ -496,9 +566,12 @@ footer {
     }
     &-logo {
       display: flex;
-      line-height: 250px;
+      line-height: 30px;
+      align-items: center;
+      height: 100%;
       @media (max-width: 910px) {
         justify-content: center;
+        height: 200px;
       }
       @media (max-width: 435px) {
         svg {
