@@ -23,13 +23,14 @@ $(function() {
  });
 });
 
- $('.screen-styles-style__demo').slick({
+$('.screen-styles-style__demo').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
   asNavFor: '.screen-styles-style-nav'
 });
+
 $('.screen-styles-style-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,

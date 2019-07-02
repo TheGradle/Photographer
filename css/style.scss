@@ -6,7 +6,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   overflow-x: hidden;
-  font-family: 'Alice', serif;
+  font-family: 'Old Standard TT', serif;
 }
 
 #toTop {
@@ -325,13 +325,16 @@ body {
       justify-content: space-around;
     }
     &-item {
+      @media (max-width: 390px) {
+        flex-basis: 100%;
+      }
       &-img {
         width: 369px;
         height: 224px;
         position: relative;
         margin-top: 35px;
         @media (max-width: 390px) {
-          padding: 0 15px;
+          width: 100%;
         }
         img {
           position: absolute;
@@ -341,6 +344,9 @@ body {
           top: 50%;
           transform: translate(-50%, -50%);
           object-fit: cover;
+          @media (max-width: 390px) {
+            width: 100%;
+          }
         }
       }
       &__title {
@@ -518,17 +524,6 @@ body {
         color: $light-color;
       }
     }
-    /* 
-    &__agreement {
-      margin-bottom: 30px;
-      &_text {
-        font-size: 16px;
-        @media (max-width: 390px) {
-          font-size: 12px;
-        }
-      }
-    }
-    */
     & > .page__btn {
       display: block;
       margin: 0 auto;
