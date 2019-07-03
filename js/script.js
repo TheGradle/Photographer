@@ -1,5 +1,3 @@
-$('a[href*="#"]').click(function(){});
-
 var $page = $('html, body');
 
 $('a[href*="#"]').click(function() {
@@ -40,4 +38,16 @@ $('.screen-styles-style-nav').slick({
 $('#nextContents').click(function(){
   $('.block-photos-item').fadeIn();
   $('#nextContents').hide();
+});
+
+$('.block-photos-item-review__img').click(function(e) {
+  var src = e.target.currentSrc;
+  $('.block-preview__img').attr("src", src);
+  $('.block-preview').fadeIn();
+});
+
+$('.block-preview').click(function(e) {
+  if(this === e.target) {
+    $('.block-preview').fadeOut();
+  }
 });
