@@ -41,7 +41,7 @@ $('#nextContents').click(function(){
 });
 
 $('.block-photos-item-review__img').click(function(e) {
-  var src = e.target.currentSrc;
+  var src = e.target.currentSrc + "-full.webp";
   $('.block-preview__img').attr("src", src);
   $('.block-preview').fadeIn();
 });
