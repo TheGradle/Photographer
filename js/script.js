@@ -1,3 +1,5 @@
+// Button to top
+
 var $page = $('html, body');
 
 $('a[href*="#"]').click(function() {
@@ -19,35 +21,35 @@ $('#toTop').click(function() {
   $('body, html').animate({scrollTop:0}, 800);
 });
 
-$('.screen-styles-style__demo').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.screen-styles-style-nav'
-});
-
-$('.screen-styles-style-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.screen-styles-style__demo',
-  centerMode: true,
-  focusOnSelect: true
-});
+// More photos via button "More photos"
 
 $('#nextContents').click(function(){
   $('.block-photos-item').fadeIn();
   $('#nextContents').hide();
 });
 
+// Popup-preview for photos
+
 $('.block-photos-item-review__img').click(function(e) {
-  var src = e.target.currentSrc + "-full.webp";
+  $('.block-preview__img').attr("src", ""); // clean src img
+
+  var src = e.target.src + "-full.webp"; // put in src full version image
+  
   $('.block-preview__img').attr("src", src);
-  $('.block-preview').fadeIn();
+  
+  $('#toTop').fadeOut(); // hide btn "toTop"
+  $('.block-preview').fadeIn(); // Show preview
 });
 
-$('.block-preview').click(function(e) {
+$('.block-preview').click(function(e) { // Close preview if user is not click on image 
   if(this === e.target) {
+    $('.block-preview').fadeOut();
+    $('#toTop').fadeIn();
+  }
+});
+
+$(document).keyup(function(e) { // Close preview if user is click on Escape
+  if (e.key === "Escape") {
     $('.block-preview').fadeOut();
   }
 });
