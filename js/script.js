@@ -31,17 +31,17 @@ $('#nextContents').click(function(){
 // Popup-preview for photos
 
 $('.block-photos-item-review__img').click(function(e) {
-  $('.block-preview__img').attr("src", ""); // clean src img
+  $('.block-preview-photo__img').attr("src", ""); // clean src img
 
   var src = e.target.src + "-full.webp"; // put in src full version image
   
-  $('.block-preview__img').attr("src", src);
+  $('.block-preview-photo__img').attr("src", src);
   
   $('#toTop').fadeOut(); // hide btn "toTop"
   $('.block-preview').fadeIn(); // Show preview
 });
 
-$('.block-preview').click(function(e) { // Close preview if user is not click on image 
+$('.block-preview-photo').click(function(e) { // Close preview if user is not click on image 
   if(this === e.target) {
     $('.block-preview').fadeOut();
     $('#toTop').fadeIn();
